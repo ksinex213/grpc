@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package auth;
 
-option go_package = "grpc/gen/go/sso;sso";
+option go_package = "github.com/ksinex213/grpc/gen/go/sso;sso";
 
 service Auth {
     rpc Register(RegisterRequest) returns (RegisterResponse);
@@ -36,4 +36,5 @@ message IsAdminRequest {
 message IsAdminResponse {
     bool is_admin = 1;
 }
+
 
